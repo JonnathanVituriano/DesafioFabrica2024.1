@@ -1,7 +1,8 @@
 from rest_framework.serializers import ModelSerializer
-from ..models import PessoaBancoDados
+from ..models import ViaCepModel
 
-class PessoaSerializer(ModelSerializer):
+class CepSerializer(ModelSerializer):
+
     class Meta:
-        model = PessoaBancoDados
-        fields = ['id', 'primeiro_nome', 'segundo_nome', 'idade']
+        model = ViaCepModel
+        fields = ['id', 'cep', 'logradouro', 'complemento', 'bairro', 'localidade', 'uf']

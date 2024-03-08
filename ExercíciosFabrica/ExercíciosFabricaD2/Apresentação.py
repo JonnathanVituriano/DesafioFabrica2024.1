@@ -96,7 +96,7 @@ print (meu_cachorro.especie, meu_cachorro.latir)
 
 
 
-"""class Animal:
+class Animal:
     def __init__(self, nome):
         self.nome = nome
     
@@ -112,5 +112,5 @@ class Gato(Animal):
         return ": miau"
 
 meu_cachorro = Cachorro("Harry")
-print(meu_cachorro.nome, meu_cachorro.som())"""
+print(meu_cachorro.nome, meu_cachorro.som())
 

@@ -1,12 +1,11 @@
 from rest_framework.routers import DefaultRouter
-from .viewsets import PessoaViewSet
-from django.urls import include, path
+from django.urls import path, include
+from .viewsets import ViaCepViewSet
 router = DefaultRouter()
 
-router.register(prefix="pessoa", viewset=PessoaViewSet)
+router.register("cep",ViaCepViewSet)
 
 urlpatterns = [
-    path['api', include(router.urls)],
-    path['',include("meuprimeiroapp.api.urls")],
+    path("api/", include(router.urls))
 ]
 

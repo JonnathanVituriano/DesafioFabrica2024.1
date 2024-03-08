@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import PessoaBancoDados
+from .models import ViaCepModel
 # Register your models here.
 
-admin.site.register(PessoaBancoDados)
+admin.site.register(ViaCepModel)
